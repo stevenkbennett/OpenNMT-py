@@ -1,4 +1,4 @@
-Translation
+Doc: Translation
 ==================
 
 Translations
@@ -17,22 +17,10 @@ Translator Class
     :members:
 
 
-Decoding Strategies
---------------------
-.. autoclass:: onmt.translate.DecodeStrategy
-    :members:
+Beam Search
+-------------
 
-.. autoclass:: onmt.translate.BeamSearch
-    :members:
-
-.. autofunction:: onmt.translate.greedy_search.sample_with_temperature
-
-.. autoclass:: onmt.translate.GreedySearch
-    :members:
-
-Scoring
---------
-.. autoclass:: onmt.translate.penalties.PenaltyBuilder
+.. autoclass:: onmt.translate.Beam
     :members:
 
 .. autoclass:: onmt.translate.GNMTGlobalScorer

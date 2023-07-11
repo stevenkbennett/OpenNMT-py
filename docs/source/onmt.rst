@@ -1,41 +1,35 @@
-Framework
+Doc: Framework
 =================
 
 Model
 -----
 
-.. autoclass:: onmt.models.BaseModel
-    :members:
-    
-.. autoclass:: onmt.models.NMTModel
+.. autoclass:: onmt.Models.NMTModel
     :members:
 
-.. autoclass:: onmt.models.LanguageModel
+.. autoclass:: onmt.Models.DecoderState
     :members:
-    
+
 Trainer
 -------
 
-.. autoclass:: onmt.trainer.Trainer
+.. autoclass:: onmt.Trainer
     :members:
 
-.. autoclass:: onmt.utils.Statistics
+
+.. autoclass:: onmt.Statistics
     :members:
 
 Loss
 ----
 
-.. autoclass:: onmt.utils.loss.LossCompute
+
+.. autoclass:: onmt.Loss.LossComputeBase
     :members:
 
-Optimizer
----------
 
-.. autoclass:: onmt.utils.Optimizer
-    :members:
+Optim
+-----
 
-.. autoclass:: onmt.utils.AdaFactor
-    :members:
-
-.. autoclass:: onmt.utils.FusedAdam
+.. autoclass:: onmt.Optim.Optim
     :members:

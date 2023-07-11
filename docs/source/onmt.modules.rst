@@ -1,61 +1,40 @@
-Modules
+Doc: Modules
 =============
 
-Embeddings
+Core Modules
 ------------
 
 .. autoclass:: onmt.modules.Embeddings
     :members:
 
-.. autoclass:: onmt.modules.PositionalEncoding
-    :members:
-
-.. autoclass:: onmt.modules.position_ffn.PositionwiseFeedForward
-    :members:
 
 Encoders
 ---------
 
-.. autoclass:: onmt.encoders.EncoderBase
+.. autoclass:: onmt.modules.EncoderBase
     :members:
 
-.. autoclass:: onmt.encoders.TransformerEncoder
+.. autoclass:: onmt.modules.MeanEncoder
     :members:
 
-.. autoclass:: onmt.encoders.RNNEncoder
+.. autoclass:: onmt.modules.RNNEncoder
     :members:
 
-.. autoclass:: onmt.encoders.GGNNEncoder
-    :members:
-
-.. autoclass:: onmt.encoders.CNNEncoder
-    :members:
-
-.. autoclass:: onmt.encoders.MeanEncoder
-    :members:
 
 Decoders
 ---------
 
 
-.. autoclass:: onmt.decoders.DecoderBase
-    :members:
-    
-.. autoclass:: onmt.decoders.TransformerDecoder
+.. autoclass:: onmt.modules.RNNDecoderBase
     :members:
 
-.. autoclass:: onmt.decoders.decoder.RNNDecoderBase
+
+.. autoclass:: onmt.modules.StdRNNDecoder
     :members:
 
-.. autoclass:: onmt.decoders.StdRNNDecoder
-    :members:
 
-.. autoclass:: onmt.decoders.InputFeedRNNDecoder
+.. autoclass:: onmt.modules.InputFeedRNNDecoder
     :members:
-
-.. autoclass:: onmt.decoders.CNNDecoder
-    :members:
-
 
 Attention
 ----------
@@ -63,17 +42,79 @@ Attention
 .. autoclass:: onmt.modules.GlobalAttention
     :members:
 
-.. autoclass:: onmt.modules.MultiHeadedAttention
+
+
+Architecture: Transfomer
+----------------------------
+
+.. autoclass:: onmt.modules.PositionalEncoding
     :members:
 
-.. autoclass:: onmt.modules.AverageAttention
+.. autoclass:: onmt.modules.PositionwiseFeedForward
+    :members:
+
+.. autoclass:: onmt.modules.TransformerEncoder
+    :members:
+
+.. autoclass:: onmt.modules.TransformerDecoder
+    :members:
+
+.. autoclass:: onmt.modules.MultiHeadedAttention
+    :members:
+    :undoc-members:
+
+
+Architecture: Conv2Conv
+----------------------------
+
+(These methods are from a user contribution
+and have not been thoroughly tested.)
+
+
+.. autoclass:: onmt.modules.CNNEncoder
+    :members:
+
+
+.. autoclass:: onmt.modules.CNNDecoder
     :members:
 
 .. autoclass:: onmt.modules.ConvMultiStepAttention
     :members:
 
+.. autoclass:: onmt.modules.WeightNorm
+    :members:
+
+Architecture: SRU
+----------------------------
+
+.. autoclass:: onmt.modules.SRU
+    :members:
+
+
+Alternative Encoders
+--------------------
+
+onmt\.modules\.AudioEncoder
+
+.. autoclass:: onmt.modules.AudioEncoder
+    :members:
+
+
+onmt\.modules\.ImageEncoder
+
+.. autoclass:: onmt.modules.ImageEncoder
+    :members:
+
+
+Copy Attention
+--------------
+
 .. autoclass:: onmt.modules.CopyGenerator
     :members:
 
-.. autoclass:: onmt.modules.structured_attention.MatrixTree
+
+Structured Attention
+-------------------------------------------
+
+.. autoclass:: onmt.modules.MatrixTree
     :members:
